@@ -4,6 +4,7 @@
     <option name="projectPerEditor">
       <map>
         <entry key="Presentation/App.axaml" value="Presentation/Presentation.csproj" />
+        <entry key="Presentation/MainView.axaml" value="Presentation/Presentation.csproj" />
         <entry key="Presentation/MainWindow.axaml" value="Presentation/Presentation.csproj" />
       </map>
     </option>
