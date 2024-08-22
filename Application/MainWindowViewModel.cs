@@ -1,4 +1,5 @@
-﻿using ReactiveUI;
+﻿using Domain;
+using ReactiveUI;
 
 namespace Application;
 
@@ -16,8 +17,10 @@ public sealed class MainWindowViewModel : ReactiveObject
 
     #endregion
 
-    public MainWindowViewModel(MainViewModel mainViewModel)
+    public MainWindowViewModel(IServiceProvider serviceProvider)
     {
-        _mainViewModel = mainViewModel;
+        var main = new Main();
+        
+        _mainViewModel = MainViewModel.Create(new Main(), serviceProvider);
     }
 }

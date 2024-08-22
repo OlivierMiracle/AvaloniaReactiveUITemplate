@@ -13,4 +13,9 @@ public sealed class Main
     public string _mainText;
 
     #endregion
+    
+    public Main()
+    {
+        MainText = "Welcome Avalonia, ReactiveUI, Clean Architecture, MVVM and DI. Did I forget about anything?";
+    }
 }

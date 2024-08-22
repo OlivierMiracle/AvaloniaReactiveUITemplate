@@ -62,13 +62,6 @@ public partial class App : Avalonia.Application
                 }
             };
         }
-        else if (ApplicationLifetime is ISingleViewApplicationLifetime singleViewPlatform)
-        {
-            singleViewPlatform.MainView = new MainView
-            {
-                DataContext = Services.GetRequiredService<MainViewModel>(),
-            };
-        }
 
         base.OnFrameworkInitializationCompleted();
     }
